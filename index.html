@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>帮助大山点亮一颗颗星 · 降低山区贫困负担</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- 顶部：联合国可持续发展目标标识 -->
+  <header class="site-header">
+    <div class="brand">
+      <div class="brand-logo">教</div>
+      <div class="brand-text">
+        <h1>帮助大山点亮一颗颗星</h1>
+        <p class="brand-sub">降低山区贫困负担 · 为山区的孩子点亮走出大山的路</p>
+      </div>
+    </div>
+    <div class="sdg-badges">
+      <div class="sdg sdg-4" title="联合国可持续发展目标 4：优质教育">
+        <span class="sdg-num">4</span>
+        <span class="sdg-name">优质教育</span>
+      </div>
+      <div class="sdg sdg-10" title="联合国可持续发展目标 10：减少不平等">
+        <span class="sdg-num">10</span>
+        <span class="sdg-name">减少不平等</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- 导航 -->
+  <nav class="tabs">
+    <button class="tab active" data-view="home">首页</button>
+    <button class="tab" data-view="dream">① 我的梦想</button>
+    <button class="tab" data-view="exam">② 进城考试</button>
+    <button class="tab" data-view="practice">③ 错题练习·物资</button>
+    <button class="tab" data-view="data">④ 数据整理</button>
+    <button class="tab" data-view="rank">排行榜</button>
+  </nav>
+
+  <main class="container">
+
+    <!-- 首页 -->
+    <section id="view-home" class="view active">
+      <div class="hero">
+        <div class="hero-text">
+          <h2>每个孩子，都该有追梦的权利</h2>
+          <p>本平台围绕联合国 17 项可持续发展目标中的
+            <b>优质教育（SDG 4）</b>与 <b>减少不平等（SDG 10）</b>设计。
+            通过四个小环节，陪山区的孩子认识梦想、练习知识、获得物资、看见成长。</p>
+          <div class="hero-actions">
+            <button class="btn btn-primary" data-goto="dream">开始第一步 →</button>
+          </div>
+        </div>
+
+        <!-- 主题插画：山区孩子望着远方的城市 -->
+        <svg class="hero-illus" viewBox="0 0 680 300" role="img" aria-label="山区孩子望着远方城市的插画">
+          <defs>
+            <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#bfe3ff"/>
+              <stop offset="1" stop-color="#fff4e0"/>
+            </linearGradient>
+            <linearGradient id="mtnBack" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#9ec6a8"/>
+              <stop offset="1" stop-color="#7fb38c"/>
+            </linearGradient>
+            <linearGradient id="mtnFront" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#5fa56f"/>
+              <stop offset="1" stop-color="#3f8a57"/>
+            </linearGradient>
+            <radialGradient id="sun" cx="0.5" cy="0.5" r="0.5">
+              <stop offset="0" stop-color="#fff3b0"/>
+              <stop offset="1" stop-color="#ffd34d"/>
+            </radialGradient>
+          </defs>
+
+          <rect x="0" y="0" width="680" height="300" fill="url(#sky)"/>
+          <circle cx="560" cy="70" r="42" fill="url(#sun)"/>
+          <g fill="#ffffff" opacity="0.85">
+            <ellipse cx="150" cy="60" rx="34" ry="14"/>
+            <ellipse cx="185" cy="52" rx="26" ry="12"/>
+            <ellipse cx="430" cy="40" rx="30" ry="12"/>
+          </g>
+          <g stroke="#5b8fb0" stroke-width="2" fill="none" opacity="0.6">
+            <path d="M70 80 q8 -8 16 0 q8 -8 16 0"/>
+            <path d="M110 70 q8 -8 16 0 q8 -8 16 0"/>
+          </g>
+
+          <!-- 远处城市 -->
+          <g>
+            <rect x="470" y="150" width="34" height="80" fill="#c9b8e8"/>
+            <rect x="510" y="120" width="40" height="110" fill="#b9a4e0"/>
+            <rect x="556" y="140" width="30" height="90" fill="#c9b8e8"/>
+            <rect x="592" y="100" width="46" height="130" fill="#a98fd6"/>
+            <rect x="644" y="160" width="30" height="70" fill="#c9b8e8"/>
+            <g fill="#fff7c2">
+              <rect x="478" y="162" width="6" height="6"/><rect x="490" y="162" width="6" height="6"/>
+              <rect x="478" y="180" width="6" height="6"/><rect x="520" y="134" width="6" height="6"/>
+              <rect x="534" y="134" width="6" height="6"/><rect x="520" y="158" width="6" height="6"/>
+              <rect x="602" y="116" width="6" height="6"/><rect x="620" y="116" width="6" height="6"/>
+              <rect x="602" y="140" width="6" height="6"/><rect x="620" y="140" width="6" height="6"/>
+              <rect x="652" y="176" width="6" height="6"/>
+            </g>
+          </g>
+
+          <!-- 山 -->
+          <path d="M0 300 L0 200 Q120 120 260 200 Q400 270 520 190 L680 240 L680 300 Z" fill="url(#mtnBack)"/>
+          <path d="M0 300 L0 250 Q160 180 320 250 Q470 310 600 250 Q650 225 680 255 L680 300 Z" fill="url(#mtnFront)"/>
+
+          <!-- 小路：从山脚通向城市 -->
+          <path d="M70 300 Q200 270 330 250 Q450 235 560 235" stroke="#e9d8a6" stroke-width="10" fill="none" stroke-linecap="round"/>
+          <path d="M70 300 Q200 270 330 250 Q450 235 560 235" stroke="#fff" stroke-width="2" stroke-dasharray="2 10" fill="none"/>
+
+          <!-- 梦想连线 + 星星 -->
+          <path d="M150 196 Q300 90 590 150" stroke="#ff9f1c" stroke-width="2.5" stroke-dasharray="5 7" fill="none"/>
+          <path d="M583 138 l4 9 10 1 -7 7 2 10 -9 -5 -9 5 2 -10 -7 -7 10 -1 z" fill="#ffb703"/>
+
+          <!-- 孩子（挥手） -->
+          <g transform="translate(120 196)">
+            <ellipse cx="0" cy="40" rx="22" ry="8" fill="#000" opacity="0.12"/>
+            <rect x="-14" y="20" width="28" height="22" rx="9" fill="#ef8354"/>
+            <circle cx="0" cy="8" r="13" fill="#ffd9b3"/>
+            <path d="M-13 6 a13 13 0 0 1 26 0 q-13 -10 -26 0 z" fill="#5b3a29"/>
+            <circle cx="-5" cy="8" r="1.8" fill="#3a2a1a"/>
+            <circle cx="5" cy="8" r="1.8" fill="#3a2a1a"/>
+            <path d="M-4 13 q4 3 8 0" stroke="#a35a3a" stroke-width="1.5" fill="none"/>
+            <rect x="-12" y="22" width="9" height="18" rx="4" fill="#ffd9b3"/>
+            <rect x="6" y="20" width="9" height="22" rx="4" fill="#ffd9b3" transform="rotate(28 10 24)"/>
+          </g>
+        </svg>
+      </div>
+
+      <div class="card-grid">
+        <article class="feature-card" data-goto="dream">
+          <svg class="feature-illus" viewBox="0 0 120 96" aria-label="梦想插画">
+            <circle cx="60" cy="48" r="40" fill="#fff2cc"/>
+            <circle cx="44" cy="50" r="15" fill="#ffd9b3"/>
+            <path d="M29 50 a15 15 0 0 1 30 0 q-15 -11 -30 0 z" fill="#5b3a29"/>
+            <circle cx="39" cy="50" r="2" fill="#3a2a1a"/>
+            <circle cx="49" cy="50" r="2" fill="#3a2a1a"/>
+            <path d="M70 14 q22 0 22 20 q0 14 -16 16 q2 -10 -6 -16 q-10 2 -8 -10 q4 -8 8 -10z" fill="#ffffff" stroke="#e0c884"/>
+            <path d="M78 26 l3 6 7 1 -5 5 1 7 -6 -4 -6 4 1 -7 -5 -5 7 -1 z" fill="#ffb703"/>
+          </svg>
+          <h3>① 我的梦想</h3>
+          <p>假如你是一位山区学生：你长大后有什么梦想？想去哪个城市？</p>
+        </article>
+        <article class="feature-card" data-goto="exam">
+          <svg class="feature-illus" viewBox="0 0 120 96" aria-label="考试插画">
+            <circle cx="60" cy="48" r="40" fill="#d9ecff"/>
+            <path d="M40 34 h34 a4 4 0 0 1 4 4 v34 a4 4 0 0 1 -4 4 h-34 a4 4 0 0 1 -4 -4 v-34 a4 4 0 0 1 4 -4z" fill="#ffffff" stroke="#7fb3e0"/>
+            <path d="M36 46 h30 M36 54 h22 M36 62 h26" stroke="#9ec6e8" stroke-width="3" stroke-linecap="round"/>
+            <path d="M70 30 l4 9 10 1 -7 7 2 10 -9 -5 -9 5 2 -10 -7 -7 10 -1 z" fill="#ffb703"/>
+          </svg>
+          <h3>② 进城考试</h3>
+          <p>小学2-5年级数学，共 15 题。考到 80 分及以上（每题约6分），就能去城里上学。</p>
+        </article>
+        <article class="feature-card" data-goto="practice">
+          <svg class="feature-illus" viewBox="0 0 120 96" aria-label="物资插画">
+            <circle cx="60" cy="48" r="40" fill="#ffe0e6"/>
+            <path d="M48 40 q-10 0 -10 10 v14 q0 6 6 6 h32 q6 0 6 -6 v-14 q0 -10 -10 -10 q-2 6 -7 6 q-5 0 -7 -6 q-2 6 -7 6 q-5 0 -7 -6z" fill="#ef6f8e"/>
+            <rect x="56" y="34" width="8" height="6" rx="3" fill="#c94f6d"/>
+            <path d="M60 58 l4 8 9 1 -7 6 2 9 -8 -5 -8 5 2 -9 -7 -6 9 -1 z" fill="#fff" stroke="#ff5d8f" stroke-width="1.5"/>
+          </svg>
+          <h3>③ 错题练习·物资</h3>
+          <p>没考上就练错题，发放爱心物资；物资可兑换分数，分数越高名次越高。</p>
+        </article>
+        <article class="feature-card" data-goto="data">
+          <svg class="feature-illus" viewBox="0 0 120 96" aria-label="数据插画">
+            <circle cx="60" cy="48" r="40" fill="#e3f6e8"/>
+            <rect x="38" y="30" width="44" height="40" rx="5" fill="#ffffff" stroke="#7fc99a"/>
+            <rect x="46" y="60" width="7" height="6" fill="#7fc99a"/>
+            <rect x="46" y="46" width="7" height="20" fill="#3f8a57"/>
+            <rect x="57" y="38" width="7" height="28" fill="#ffb703"/>
+            <rect x="68" y="52" width="7" height="14" fill="#5b8fb0"/>
+          </svg>
+          <h3>④ 数据整理</h3>
+          <p>整理你答过的每一道题、每一个答案，导出属于你的成长档案。</p>
+        </article>
+      </div>
+
+      <!-- 真实照片画廊：乡村 → 城市 -->
+      <section class="home-gallery">
+        <h3>从这里，到那里</h3>
+        <p>我们来自山野与村庄，也向往知识与城市的灯火。每一步努力学习，都是通往梦想的桥。</p>
+        <div class="photo-grid">
+          <figure class="photo-card">
+            <img src="images/terraces.webp" alt="山间梯田与村落" loading="lazy"/>
+            <figcaption>山里的梯田与村落</figcaption>
+          </figure>
+          <figure class="photo-card">
+            <img src="images/village-aerial.webp" alt="公路穿过村庄" loading="lazy"/>
+            <figcaption>通向远方的路</figcaption>
+          </figure>
+          <figure class="photo-card">
+            <img src="images/shanghai-pearl.jpg" alt="上海东方明珠" loading="lazy"/>
+            <figcaption>梦想的城市</figcaption>
+          </figure>
+          <figure class="photo-card">
+            <img src="images/shanghai-skyline.jpg" alt="上海外滩夜景" loading="lazy"/>
+            <figcaption>璀璨的城市夜景</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <div id="home-status" class="status-strip"></div>
+    </section>
+
+    <!-- 模块1：我的梦想 -->
+    <section id="view-dream" class="view">
+      <h2>① 假如你是一位山区学生</h2>
+      <p class="lead">闭上眼睛想一想，长大以后的你，会是什么样子？</p>
+      <div class="form-card">
+        <label class="field">
+          <span>你的名字（或小名）</span>
+          <input type="text" id="inp-name" placeholder="例如：小石头" maxlength="12" />
+        </label>
+        <label class="field">
+          <span>你长大后有什么梦想？</span>
+          <textarea id="inp-dream" rows="3" placeholder="例如：我想当一名医生，回山里给乡亲们看病。"></textarea>
+        </label>
+        <label class="field">
+          <span>你长大后想去哪个城市？（均为中国城市）</span>
+          <select id="inp-city" class="city-select">
+            <option value="">请选择想去的城市…</option>
+          </select>
+        </label>
+        <button class="btn btn-primary" id="btn-save-dream">保存我的梦想</button>
+        <p id="dream-saved" class="hint-ok" hidden>已保存！梦想已经种下 🌱</p>
+      </div>
+    </section>
+
+    <!-- 模块2：进城考试 -->
+    <section id="view-exam" class="view">
+      <h2>② 一次去城市里的考试</h2>
+      <p class="lead">这是一场通往城里学校的数学测验。共 15 题（难度：小学2-5年级），考到 <b>80 分及以上</b>（每题约 6 分，满分约 100）即可解锁「去城里上学」。</p>
+
+      <div id="exam-intro" class="exam-intro">
+        <div class="exam-rules">
+          <p>📘 题目范围：覆盖小学 1-6 年级，逐级变难 —— 进城考 1-2 年级、市赛 2-3 年级、省赛 3-4 年级、国赛 5-6 年级</p>
+          <p>🎯 目标：考到 80 分及以上（百分制，满分 100）→ 免费进城上学 / 晋级更高榜单</p>
+          <p>💡 小贴士：答错的题会进入「错题练习」环节；每答对 1 题额外获得 1 份爱心物资 🎒</p>
+        </div>
+        <div class="exam-start-row">
+          <button class="btn btn-primary" id="btn-start-exam">开始考试（进城）</button>
+        </div>
+
+        <div class="sprint-section">
+          <h3 class="sprint-title">🚀 逐级晋级：冲刺市赛 → 省赛 → 国赛</h3>
+          <p class="sprint-sub">先考过「进城考试」，才能挑战市赛；市赛通过后解锁省赛；省赛通过后解锁国赛。每答对 1 题还额外获得 1 份爱心物资 🎒。</p>
+          <div class="exam-start-row sprint-row">
+            <button class="btn btn-sprint" id="btn-sprint-city">冲刺市赛</button>
+            <button class="btn btn-sprint" id="btn-sprint-province">冲刺省赛</button>
+            <button class="btn btn-sprint" id="btn-sprint-national">冲刺国赛</button>
+          </div>
+        </div>
+        <p class="exam-hint">🏙️ 城里考过之后，还能冲刺「市赛 / 省赛 / 国赛」，层层晋级，登上更高的榜单！</p>
+      </div>
+
+      <div id="exam-run" class="exam-run" hidden>
+        <div class="exam-progress">
+          <div class="progress-line">
+            <span id="exam-counter">第 1 / 15 题</span>
+            <span id="exam-correct">已答对 0 / 5</span>
+          </div>
+          <div class="progress-bar"><div class="progress-fill" id="exam-fill"></div></div>
+        </div>
+        <div class="question-card">
+          <div class="q-text" id="q-text">—</div>
+          <div class="q-options" id="q-options"></div>
+          <p id="q-feedback" class="q-feedback" hidden></p>
+        </div>
+        <div class="exam-actions">
+          <button class="btn btn-ghost" id="btn-quit-exam">退出考试</button>
+          <button class="btn btn-primary" id="btn-go-city" hidden>🎉 去城里上学！</button>
+        </div>
+      </div>
+
+      <div id="exam-result" class="exam-result" hidden></div>
+    </section>
+
+    <!-- 模块3：错题练习 + 物资 -->
+    <section id="view-practice" class="view">
+      <h2>③ 错题练习 · 发放物资</h2>
+      <p class="lead">每一次练习，都是离梦想更近一步。练对一题，就能收到一份爱心物资。</p>
+
+      <div class="supply-bar">
+        <div class="supply-box">
+          <span class="supply-icon">🎒</span>
+          <span>我的物资：<b id="supply-count">0</b> 份</span>
+        </div>
+        <div class="supply-box">
+          <span class="supply-icon">⭐</span>
+          <span>我的分数：<b id="score-count">0</b> 分</span>
+        </div>
+        <button class="btn btn-secondary" id="btn-exchange">用物资兑换分数（1 份 = 1 分）</button>
+      </div>
+
+      <div id="practice-area"></div>
+    </section>
+
+    <!-- 模块4：数据整理 -->
+    <section id="view-data" class="view">
+      <h2>④ 数据整理</h2>
+      <p class="lead">把你走过的每一步，整理成一份成长档案。</p>
+
+      <div class="data-summary" id="data-summary"></div>
+
+      <div class="supply-card" id="supply-card">
+        <h3>🎒 爱心物资汇总</h3>
+        <div class="supply-grid" id="supply-summary"></div>
+        <p class="supply-hint" id="supply-reset-hint"></p>
+      </div>
+
+      <div class="data-log">
+        <h3>答题明细</h3>
+        <div class="table-wrap">
+          <table id="log-table">
+            <thead>
+              <tr><th>#</th><th>环节</th><th>题目</th><th>你的答案</th><th>正确答案</th><th>结果</th></tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="data-actions">
+        <button class="btn btn-secondary" id="btn-export-json">导出 JSON</button>
+        <button class="btn btn-secondary" id="btn-export-csv">导出 CSV</button>
+        <button class="btn btn-danger" id="btn-reset">重置全部数据</button>
+      </div>
+    </section>
+
+    <!-- 排行榜 -->
+    <section id="view-rank" class="view">
+      <h2>🏆 成长排行榜</h2>
+      <p class="lead">分数越高，名次越靠前。考上城里学校、闯过市赛 / 省赛 / 国赛的同学，会获得额外加成。</p>
+      <div class="rank-tabs" id="rank-tabs">
+        <button class="rank-tab active" data-scope="national">国榜</button>
+        <button class="rank-tab" data-scope="province">省榜</button>
+        <button class="rank-tab" data-scope="city">市榜</button>
+        <span class="rank-tab-ind" id="rank-tab-ind"></span>
+      </div>
+      <p class="rank-note" id="rank-note"></p>
+      <div class="rank-board" id="rank-board"></div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>帮助大山点亮一颗颗星 · 降低山区贫困负担 —— 呼应联合国可持续发展目标 SDG 4 优质教育 / SDG 10 减少不平等</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
